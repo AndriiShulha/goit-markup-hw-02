@@ -1,1 +1,225 @@
+:root {
+    /* fonts */
+    --main-font: "Roboto";
+    --secondary-font: "Raleway";
 
+    /* text colors */
+    --accent-txt-color: #2196F3;
+    --black-color: #212121;
+    --main-gray-btn: #F5F4FA;
+
+
+    /* bg-colors */
+
+    /* others */
+}
+
+
+
+body {
+    font-family: "Roboto", "Raleway"; sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* common styles start */
+    .link {
+        text-decoration: none;
+
+    }
+
+    .list {
+        list-style: none;
+    }
+
+/* common sryles end */
+
+/* Header section */
+
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+    .header-link:hover,
+    .header-link:focus {
+        color: var(--accent-txt-color);
+    }
+
+    .header-contact {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1,14;
+        letter-spacing: 0.02em;
+        color: #757575;
+    }
+
+    .header-logo {
+        font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: #2196F3;
+    }
+
+        .logo {
+            color: #000000;
+        }
+
+
+/* Hero section */
+    .hero {
+        background-color: #2F303A;
+    }
+
+
+    .hero-btn {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background-color: #2196F3;
+        
+    }
+
+    .button-list {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: left;
+        letter-spacing: 0.03em;
+        color: var(--main-gray-btn);
+
+        cursor: pointer;
+    }
+
+    .button-list:hover,
+    .button-list:focus {
+        background-color: var(--main-gray-btn)
+        color:var(--accent-txt-color)
+    }
+
+
+    .section-about {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        
+        color: #212121;
+    }
+    
+        .section-abt {
+            font-weight: 400;
+                font-size: 16px;
+                line-height: 1.89;
+                letter-spacing: 0.03em;
+            
+                color: #757575;
+        }
+
+    .uppertitle {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+  }
+
+    .btn:focus {
+        background-color:#2196F3;
+    }
+
+
+    .benefits-about {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        
+            color: #212121;
+    }
+
+    .benefits-description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: #757575;
+    }
+
+    .about-us {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #212121;
+    }
+  
+
+    .team {
+        background: #F5F4FA;
+    }
+
+        .team-us {
+             color: #212121;
+        }
+
+        .team-employees {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.19;
+            text-align: center;
+            letter-spacing: 0.03em;
+
+            color: #212121;
+        }
+
+
+            .place-work {
+                
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.19;
+                text-align: center;
+                letter-spacing: 0.03em;
+
+                color: #757575;
+            }
+
+
+
+
+    .footer {
+        background-color: #2F303A;
+    }
+
+    .footer-logo {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+    }
+     
+     .link:hover,
+     .link:focus {
+        color: var(--accent-txt-color);
+     }
+
+     .footer-logo-ft {
+        color: #FFFFFF;
+     }
