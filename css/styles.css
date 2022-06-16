@@ -5,8 +5,11 @@
 
     /* text colors */
     --accent-txt-color: #2196F3;
-    --black-color: #212121;
-    --main-gray-btn: #F5F4FA;
+    --header-color: #212121;
+    --main-color-btn: #F5F4FA;
+    --card-text: #757575;
+    --bg-color: #2F303A;
+    --color-light: #FFFFFF;
 
 
     /* bg-colors */
@@ -17,7 +20,7 @@
 
 
 body {
-    font-family: "Roboto", "Raleway"; sans-serif;
+    font-family: "Roboto", "Raleway", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -43,7 +46,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--card-text);
 }
     .header-link:hover,
     .header-link:focus {
@@ -55,7 +58,7 @@ body {
         font-size: 14px;
         line-height: 1,14;
         letter-spacing: 0.02em;
-        color: #757575;
+        color: var(--card-text);
     }
 
     .header-logo {
@@ -63,30 +66,36 @@ body {
             font-size: 26px;
             line-height: 1.19;
             letter-spacing: 0.03em;
-            color: #2196F3;
+            color: var(--accent-txt-color);
     }
 
         .logo {
             color: #000000;
         }
 
+        .current:hover {
+                color: var(--accent-txt-color);
+        }
+
 
 /* Hero section */
     .hero {
-        background-color: #2F303A;
+        background-color: var(--bg-color);
+    }
+
+    .hidden {
+        display: none;
     }
 
 
     .hero-btn {
+        font-family: inherit;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.06em;
-        color: #FFFFFF;
-        background-color: #2196F3;
+        color: var(--color-light);
+        background-color: var(--accent-txt-color);
         
     }
 
@@ -97,34 +106,35 @@ body {
         line-height: 1.62;
         text-align: left;
         letter-spacing: 0.03em;
-        color: var(--main-gray-btn);
+        color: var(--card-text);
 
         cursor: pointer;
     }
 
     .button-list:hover,
     .button-list:focus {
-        background-color: var(--main-gray-btn)
-        color:var(--accent-txt-color)
+        background-color: var(--card-text);
+        color: var(--accent-txt-color);
+
     }
 
 
-    .section-about {
+    .card-title {
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
         
-        color: #212121;
+        color: var(--header-color);
     }
     
-        .section-abt {
+        .card-text {
             font-weight: 400;
                 font-size: 16px;
                 line-height: 1.89;
                 letter-spacing: 0.03em;
             
-                color: #757575;
+                color: var(--card-text);
         }
 
     .uppertitle {
@@ -134,11 +144,13 @@ body {
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: #FFFFFF;
+      color: var(--color-light);
   }
 
-    .btn:focus {
-        background-color:#2196F3;
+    .btn:hover,
+    .btn:focus{
+
+        background-color: #188CE8;
     }
 
 
@@ -149,7 +161,7 @@ body {
             letter-spacing: 0.03em;
             text-transform: uppercase;
         
-            color: #212121;
+            color: var(--header-color);
     }
 
     .benefits-description {
@@ -157,7 +169,7 @@ body {
             font-size: 14px;
             line-height: 1.71;
             letter-spacing: 0.03em;
-            color: #757575;
+            color: var(--card-text);
     }
 
     .about-us {
@@ -166,16 +178,16 @@ body {
             line-height: 1.17;
             text-align: center;
             letter-spacing: 0.03em;
-            color: #212121;
+            color: var(--header-color);
     }
   
 
     .team {
-        background: #F5F4FA;
+        background: var(--main-color-btn);
     }
 
         .team-us {
-             color: #212121;
+             color: var(--header-color);
         }
 
         .team-employees {
@@ -185,7 +197,7 @@ body {
             text-align: center;
             letter-spacing: 0.03em;
 
-            color: #212121;
+            color: var(--header-color);
         }
 
 
@@ -197,14 +209,14 @@ body {
                 text-align: center;
                 letter-spacing: 0.03em;
 
-                color: #757575;
+                color:var(--card-text);
             }
 
 
 
 
     .footer {
-        background-color: #2F303A;
+        background-color: var(--bg-color);
     }
 
     .footer-logo {
@@ -212,7 +224,7 @@ body {
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: #2196F3;
+        color: var(--accent-txt-color);
     }
      
      .link:hover,
@@ -221,5 +233,28 @@ body {
      }
 
      .footer-logo-ft {
-        color: #FFFFFF;
+        color: var(--color-light);
+     }
+
+     .address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--color-light);
+     }
+
+     .link-footer {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+
+     }
+    
+     .footer-contact {
+            text-decoration: none;
      }
