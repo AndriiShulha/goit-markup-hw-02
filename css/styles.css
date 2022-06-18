@@ -5,8 +5,7 @@
 
     /* text colors */
     --accent-txt-color: #2196F3;
-    --header-color: #212121;
-    --main-color-btn: #F5F4FA;
+    --main-color-btn: #212121;
     --card-text: #757575;
     --bg-color: #2F303A;
     --color-light: #FFFFFF;
@@ -41,15 +40,29 @@ body {
 
 /* Header section */
 
-   
 
-.header-link {
+
+
+.link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--card-text);
 }
+
+ .header-link {
+     color: var(--card-text);
+}
+
+    .nav-link {
+        color: var(--main-color-btn);
+    }
+
+          .current {
+              color: var(--accent-txt-color);
+    
+          }
+
     .header-link:hover,
     .header-link:focus {
         color: var(--accent-txt-color);
@@ -75,15 +88,10 @@ body {
             color: #000000;
         }
 
-        
-        .current:hover {
-            
-                color: var(--accent-txt-color);
+     
 
-        }
-
-         .header-color {
-            color: var(--header-color);
+         .main-color-btn {
+            color: var(--main-color-btn);
         }
 
 
@@ -116,15 +124,26 @@ body {
         line-height: 1.62;
         text-align: left;
         letter-spacing: 0.03em;
-        color: var(--card-text);
+        color: var(--main-color-btn);
 
         cursor: pointer;
     }
+    
 
+         ul {
+            list-style: none;
+    }
+
+
+        button {
+            cursor: pointer;
+            border: none;
+    }
+    .button-list.current,
     .button-list:hover,
     .button-list:focus {
-        background-color: var(--card-text);
-        color: var(--accent-txt-color);
+        background-color: var(--accent-txt-color);
+        color: var(--color-light);
 
     }
 
@@ -135,7 +154,7 @@ body {
         line-height: 2;
         letter-spacing: 0.06em;
         
-        color: var(--header-color);
+        color: var(--main-color-btn);
     }
     
         .card-text {
@@ -171,7 +190,7 @@ body {
             letter-spacing: 0.03em;
             text-transform: uppercase;
         
-            color: var(--header-color);
+            color: var(--main-color-btn);
     }
 
     .benefits-description {
@@ -188,7 +207,7 @@ body {
             line-height: 1.17;
             text-align: center;
             letter-spacing: 0.03em;
-            color: var(--header-color);
+            color: var(--main-color-btn);
     }
   
 
@@ -197,7 +216,7 @@ body {
     }
 
         .team-us {
-             color: var(--header-color);
+             color: var(--main-color-btn);
         }
 
         .team-employees {
@@ -207,7 +226,7 @@ body {
             text-align: center;
             letter-spacing: 0.03em;
 
-            color: var(--header-color);
+            color: var(--main-color-btn);
         }
 
 
