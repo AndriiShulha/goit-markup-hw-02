@@ -60,6 +60,13 @@ img {
 
 /* Header section */
 
+    .section-distance {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+
+
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -69,6 +76,10 @@ img {
 
     outline: 1px solid red;
 
+}
+
+.about-container {
+    display: flex;
 }
 
 
@@ -81,6 +92,7 @@ img {
 
  .header-link {
      color: var(--card-text);
+     margin-left: 50px;
 }
 
 .header-container {
@@ -107,7 +119,10 @@ img {
 
 
     .nav-link {
+        display:block;
         color: var(--main-color-btn);
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
           .current {
@@ -157,8 +172,13 @@ img {
         display: none;
     }
 
+    .btn {
+        border-radius: 4px;
+    }
+
 
     .hero-btn {
+        padding: 10px 30px;
         font-family: inherit;
         font-weight: 700;
         font-size: 16px;
@@ -167,9 +187,11 @@ img {
         color: var(--color-light);
         background-color: var(--accent-txt-color);
         
+        
     }
 
     .button-list {
+        padding: 5px 20px;
         font-family: inherit;
         font-weight: 500;
         font-size: 16px;
@@ -199,6 +221,26 @@ img {
 
     }
 
+    .about-img {
+        display: flex;
+        width: 370px;
+        
+        
+
+    }
+
+    .card-img:not(:last-child),
+    .card-img:nth-child(3n) {
+        margin-right: 30px;
+        
+
+    }
+   
+    .team-item:not(:last-child) {
+        margin-right: 30px;
+        width: 270px;
+    }
+    
 
     .card-title {
         font-weight: 700;
@@ -234,6 +276,7 @@ img {
         background-color: #188CE8;
     }
 
+     
 
     .benefits-about {
             font-weight: 700;
