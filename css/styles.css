@@ -61,8 +61,8 @@ img {
 /* Header section */
 
     .section-distance {
-        margin-top: 90px;
-        margin-bottom: 90px;
+        margin-top: 94px;
+        margin-bottom: 94px;
     }
 
 
@@ -276,9 +276,20 @@ img {
         background-color: #188CE8;
     }
 
-     
+    .benefits-us {
+        display: flex;
+        justify-content: space-between;
+
+}
+
+    .benefits-info {
+        widows: 270px;
+        flex-basis: calc((100% - 90px) / 4);
+    }
+
 
     .benefits-about {
+            margin-bottom: 10px;
             font-weight: 700;
             font-size: 14px;
             line-height: 16px;
