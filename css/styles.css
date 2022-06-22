@@ -374,6 +374,7 @@ img {
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--color-light);
+      margin-bottom: 30px;
   }
 
     .btn:hover,
@@ -429,7 +430,19 @@ img {
     }
 
         .team-us {
-             color: var(--main-color-btn);
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            
+
+            width: 1170px;
+            height: 368px;
+            padding: 186px 215px 94px 215px;
+            color: var(--main-color-btn);
+            margin: 0 auto;
+
         }
 
         .team-employees {
